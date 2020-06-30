@@ -1,0 +1,182 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+button {
+    height: 30px;
+    width: 90px;
+    margin-bottom: 20px;
+}
+
+td {
+    border: 1px solid #e6e6e6;
+    width: 200px;
+    height: 320px;
+    text-align: center;
+    margin: 20px;
+}
+
+button {
+    border-radius: 50px;
+    width: 90px;
+    height: 30px;
+    font-size: 13px;
+    background-color: #ff5c33;
+    color: white;
+    font-weight: bold;
+}
+
+tr, td {
+    display: inline-block;
+}
+
+.tabela {
+    position:absolute;
+    left:200px;
+    top:70px;
+    width: 740px;
+}
+
+h2 {
+    font-size: 13px;
+    width: 200px;
+    height: 38px;
+    margin: 0px;
+}
+
+h1 {
+    position: relative;
+    top: 15px;
+    left:90px;
+    font-size: 26px;
+    color: #ff5c33;
+    width:100px;
+}
+
+h3 {
+    font-size: 10px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px;
+    position: relative;
+    top: 20px;
+    float: left;
+    font-size: 9px;
+    clear: both;
+}
+
+img {
+    width: 160px;
+    height: 130px;
+}
+
+form[action="/logowanie"] {
+    width: 80px;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+}
+
+form[action="/handleselect"] {
+    width: 180px;
+}
+
+form[action="/handleform"] {
+    width: 300px;
+    margin: 0px;
+}
+
+form[action="/addeditem"] {
+    margin-left: 70px;
+    margin-top: 70px;
+    width: 200px;
+    border: 2px solid rgb(230, 230, 230);
+    padding: 20px;
+    background-color: #d9d9d9;
+}
+
+#wstecz {
+    position: relative;
+    right: -120px;
+    width: 70px;
+    height: 20px;
+    background-color: #ff5c33;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid rgb(230, 230, 230);
+}
+
+label {
+    clear: both;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    position: relative;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+select {
+    border-radius: 30px;
+}
+
+#additem {
+    width: 130px;
+    height: 30px;
+    background-color: #ff5c33;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid rgb(230, 230, 230);
+}
+.additemForm label{
+    display:block;
+}
+.additemForm.full {
+    clear: both;
+}
+.additemForm{
+    display: inline-block;
+    margin-right:30px;
+}
+a {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 4px;
+    font-weight: bold;
+}
+
+form[action="/login"] {
+    margin-left: 70px;
+    margin-top: 70px;
+    width: 170px;
+    border: 2px solid rgb(230, 230, 230);
+    padding: 20px;
+    background-color: #d9d9d9;
+}
+
+#login {
+    width: 70px;
+    height: 20px;
+    background-color: #ff5c33;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid rgb(230, 230, 230);
+}
+
+.logout {
+    font-size: 9px;
+}

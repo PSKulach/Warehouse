@@ -1,0 +1,49 @@
+<form action="/handleform" method="get">
+  <label><input type="text" name="txt" id="tekst" placeholder="np 'telewizor' lub 'Samsung'"></label>
+  <button>szukaj</button>
+  <br>
+</form>
+<form action="/handleselect" method="get">
+  <select name="rodzaj" onchange="sortuj();">
+    {{#if wsk}}
+    <option value="opcja1">Cena -rosnąco</option>
+    <option value="opcja2">Cena -malejąco</option>
+    {{else}}
+    <option value="opcja2">Cena -malejąco</option>
+    <option value="opcja1">Cena -rosnąco</option>
+    {{/if}}
+  </select>
+  <label>Ilość/strona: <input type="text" name="ilosc" value="{{ilosc}}"/></label>
+  <label>Strona: <input type="text" name="strona" value="{{strona}}"/></label>
+  <button>sortuj</button>
+</form>
+
+<form action="/logowanie" method="get">
+  {{#if stat}}
+  <h3>Zalogowany</h3>
+  <div id="login">
+    <h3><a href="/logout" class="logout">Wyloguj</a></h3>
+  </div>
+  {{else}}
+  <button>Logowanie</button> {{/if}}
+</form>
+{{#if stat}}
+<div id="additem">
+  <a href="/additem">Dodaj produkt</a>
+</div>
+{{/if}}
+<table class="tabela">
+  {{#each dane}}
+  <tr>
+    <td>
+      <img src='{{URL}}' alt="tel7">
+      <h2>{{Marka}}</h2>
+      <h2>Model: {{Model}}</h2>
+      <p>Przekątna ekranu[cal]: {{Przekatna}}</p>
+      <p>Matryca: {{Matryca}}</p>
+      <p>WiFi: {{WiFi}}</p>
+      <h1>{{Cena}},-</h1>
+    </td>
+  </tr>
+  {{/each}}
+</table>

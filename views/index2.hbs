@@ -1,0 +1,28 @@
+<form action="/handleform" method="get">
+  <label><input type="text" name="txt" id="tekst" placeholder="np 'telewizor' lub 'Samsung'"></label>
+  <button>szukaj</button><br>
+  <select>
+     {{#if wsk}}
+  <option value="Opcja1">Cena -rosnąco</option>
+  <option value="Opcja2">Cena -malejąco</option>
+  {{else}}
+    <option value="opcja2">Cena -malejąco</option>
+    <option value="opcja1">Cena -rosnąco</option>
+  {{/if}}
+</select>
+  <button>sortuj</button>
+</form>
+<form action="/logowanie" method="get">
+  {{#if stat}}
+  <h3>Zalogowany</h3>
+  <div id="login">
+    <h3><a href="/logout" class="logout">Wyloguj</a></h3>
+  </div>
+  {{else}}
+  <button formaction="/logowanie">Logowanie</button> {{/if}}
+</form>
+{{#if stat}}
+<div id="additem">
+  <a href="/additem">Dodaj produkt</a>
+</div>
+{{/if}}

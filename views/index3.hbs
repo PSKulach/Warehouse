@@ -1,0 +1,35 @@
+<form action="/handleform" method="get">
+  <label><input type="text" name="txt" id="tekst" placeholder="np 'telewizor' lub 'Samsung'"></label>
+  <button>szukaj</button>
+  <br>
+</form>
+<form action="/logowanie" method="get">
+  {{#if stat}}
+  <h3>Zalogowany</h3>
+  <div id="login">
+    <h3><a href="/logout" class="logout">Wyloguj</a></h3>
+  </div>
+  {{else}}
+  <button>Logowanie</button> {{/if}}
+</form>
+{{#if stat}}
+<div id="additem">
+  <a href="/additem">Dodaj produkt</a>
+</div>
+{{/if}}
+<form action="/item/:tagId" method="get">
+  <table class="tabela">
+    {{#each dane}}
+    <tr>
+      <td><img src='{{URL}}' alt="tel7">
+        <h2>{{Marka}}</h2>
+        <h2>{{Model}}</h2>
+        <p>Przekątna ekranu:{{Przekatna}}</p>
+        <p>Matryca: {{Matryca}}</p>
+        <p>WiFi: {{WiFi}}</p>
+        <h1>{{Cena}},-</h1>
+      </td>
+    </tr>
+    {{/each}}
+  </table>
+</form>

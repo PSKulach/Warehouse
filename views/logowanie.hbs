@@ -1,0 +1,13 @@
+<form action="/login" method="get">
+    {{#if stat}}
+    <h3>Zalogowany</h3>
+    <div id="login">
+        <h3><a href="/logout" class="logout">Wyloguj</a></h3>
+    </div>
+    {{else}}
+    <h2>Logowanie</h2>
+    <label>Nazwa Użytkownika<input type="text" name="username" placeholder="admin"></label>
+    <label>Hasło<input type="text" name="password" placeholder="admin"></label>
+    <button>Zaloguj się</button>
+    <button formaction="/">Wstecz</button> {{/if}}
+</form>

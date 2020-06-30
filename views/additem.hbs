@@ -1,0 +1,28 @@
+<form enctype="multipart/form-data" action="/addeditem" method="POST">
+    <h2>Dodaj Telewizor</h2>
+    <div class="additemForm">
+    <label><input type="file" required accept="image/*" name="imagetoupload"></label>
+    </div>
+    <div class="additemForm">
+    <label>Marka:<input type="text" name="Marka"></label>
+    </div>
+    <div class="additemForm">
+    <label>Model:<input type="text" name="Model"></label>
+    </div>
+    <div class="additemForm">
+    <label>Przekątna ekranu:<input type="text" name="Przekatna"></label>
+    </div>
+    <div class="additemForm">
+    <label>Matryca:<input type="text" name="Matryca"></label>
+    </div>
+    <div class="additemForm">
+    <label>Cena:<input type="text" name="Cena"></label>
+    </div>
+    <div class="additemForm">
+    <label>WiFi:<input type="text" name="WiFi" placeholder="Tak/Nie"></label>
+    </div>
+    <button>Dodaj</button>
+    <div id="wstecz">
+        <h3><a href="/login?username=admin&password=admin" class="logout">Wstecz</a></h3>
+    </div>
+</form>
